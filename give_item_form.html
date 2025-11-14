@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give an Item - Swaply</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="Swaply.png" alt="Swaply Logo" width="300" >
+    <center>
+    
+        <h1>Give an Item</h1>
+        <p>Fill out the form below to list your item.</p>
+
+        <table border="0" cellpadding="5">
+            <tr>
+                <td>Category:</td>
+                <td>
+                    <select name="category">
+                        <option value="furniture">Furniture</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="tools">Tools</option>
+                        <option value="kitchen">Kitchen</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="books_media">Books & Media</option>
+                        <option value="toys_games">Toys & Games</option>
+                        <option value="sports_outdoor">Sports & Outdoor</option>
+                        <option value="baby_kids">Baby & Kids</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Item Name:</td>
+                <td>
+                    <input type="text" name="item_name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Description:</td>
+                <td>
+                    <textarea name="description" placeholder="Write information about your item here..." rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Image:</td>
+                <td>
+                    <input type="file" name="item_image">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Condition:</td>
+                <td>
+                    <input type="radio" name="condition" value="new_box"> New (in box)
+                    <br>
+                    <input type="radio" name="condition" value="new"> New
+                    <br>
+                    <input type="radio" name="condition" value="used"> Used
+                </td>
+            </tr>
+
+            <tr>
+                <td>Approx. Age:</td>
+                <td>
+                    <input type="text" name="item_age" placeholder="e.g., 2 years old" maxlength="20">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Location:</td>
+                <td>
+                    <input type="radio" name="location" value="north"> North
+                    <br>
+                    <input type="radio" name="location" value="center"> Center
+                    <br>
+                    <input type="radio" name="location" value="south"> South
+                    <br>
+                    <input type="radio" name="location" value="west"> West
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pickup:</td>
+                <td>
+                    <select name="pickup">
+                        <option value="pickup_only">Pickup Only</option>
+                        <option value="can_meet">Can meet locally</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Contact Phone:</td>
+                <td>
+                    <input type="tel" name="phone" placeholder="05X-XXX-XXXX" maxlength="10">
+                </td>
+            </tr>
+
+        </table> 
+        
+        <br>
+        
+        <a href="thank_you.html">
+            <img src="images_buttons/submit_item.png" alt="Submit Item" width="120" border="0">
+        </a>
+
+        <br>
+        <br>
+        
+    </center>
+    
+    <a href="index.html">
+        <img src="images_buttons/back_to_main_page.png" alt="Back to Main Page" width="100" border="0">
+    </a>
+</body>
+</html>
