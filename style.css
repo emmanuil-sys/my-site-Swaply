@@ -1,0 +1,78 @@
+body {
+
+    background: linear-gradient(-45deg, 
+        #233a6d,
+        #4a2e4f, 
+        #00334d, 
+        #1e1e3f, 
+        #3a003a, 
+        #333333, 
+        #0e4949, 
+        #0d321d, 
+        #233a6d  
+    );
+    background-size: 400% 400%;
+    animation: gradient-magic 25s ease infinite;
+    color: white;
+}
+
+@keyframes gradient-magic {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+table {
+    /* * rgba(0, 0, 0, 0.4)
+     * Это черный цвет (0,0,0) 
+     * с 40% прозрачности (0.4).
+     * Это и есть "эффект стекла".
+    */
+    background-color: rgba(0, 0, 0, 0.4);
+    
+    /* Закругляем углы */
+    border-radius: 15px;
+    
+    /* Даем "воздух" внутри панели */
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Тонкая, едва заметная рамка */
+}
+
+/* 2. Делаем все поля ввода ТЕМНЫМИ */
+input,
+select,
+textarea {
+    background-color: #333; /* Темно-серый фон */
+    color: white; /* Белый текст */
+    border: 1px solid #555; /* Еле видная рамка */
+    border-radius: 5px; /* Слегка закруглим */
+    padding: 5px; /* Немного "воздуха" внутри */
+    font-size: 14px; /* Чуть-чуть увеличим шрифт */
+    width: 300px; /* Задаем всем полям приличную ширину */
+}
+
+/* 3. Отдельно стилизуем поля radio и checkbox, 
+   потому что они особенные */
+input[type="radio"],
+input[type="checkbox"] {
+    background-color: transparent; /* У них не должно быть фона */
+}
+/* * Это правило заставляет ЛЮБУЮ картинку-ссылку 
+ * плавно менять свою прозрачность за 0.3 секунды.
+*/
+a img {
+    opacity: 1; /* Полностью видна */
+    transition: opacity 0.3s ease; /* Магия плавности */
+}
+
+/* * А это правило говорит: "Когда мышь НАВЕДЕНА
+ * на картинку-ссылку, сделай ее на 80% прозрачной".
+*/
+a img:hover {
+    opacity: 0.8; /* Слегка тускнеет */
+}
